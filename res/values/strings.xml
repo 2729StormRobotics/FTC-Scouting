@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Storm Scouting Radar</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="Team_string">Enter Team Number</string>
+    <string name="Match_string">Enter Match Number</string>
+    <string name="begin_match">Begin Match</string>
+    <string name="Red">Red</string>
+    <string name="Blue">Blue</string>
+    <string name="title_activity_match">MatchActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_autofrag">Autofrag</string>
+    <string name="bpzf">Bot moved from ramp to floor</string>
+    <string name="kickstand">Bot knocked kickstand over</string>
+    <string name="centerauto">Bot scored in center goal</string>
+    <string name="autoroll">Rolling goal scored</string>
+    <string name="rollauto">Rolling goal to parkzone</string>
+    <string name="title_activity_telefrag">Telefrag</string>
+    <string name="thirty">30cm rolling goal</string>
+    <string name="sixty">60cm rolling goal</string>
+    <string name="ninty">90cm rolling goal</string>
+    <string name="made">Made</string>
+    <string name="miss">Miss</string>
+    <string name="sub">_</string>
+    <string name="title_activity_endgamefrag">Endgamefrag</string>
+    <string name="botrolltopz">Bot or Rolling goal to parkzone</string>
+    <string name="botrollofffloor">Bot or Rolling goal off floor</string>
+    <string name="centergoalend">Center Goal Scored</string>
+    <string name="title_activity_submit__frag">Submit_Frag</string>
+    <string name="Data">Data For:</string>
+    <string name="Submit">Submit</string>
+    <string name="title_activity_qr">QRActivity</string>
+    <string name="title_activity_auto">AutoActivity</string>
+    <string name="title_activity_tele">TeleActivity</string>
+    <string name="title_activity_end_game">EndGameActivity</string>
+    <string name="auto">To tele-op</string>
+    <string name="tele">To End Game</string>
+    <string name="teleend">To tele-op and endgame</string>
+    <string name="title_activity_tele_end">TeleEndActivity</string>
+    <string name="EndGame">End Game</string>
+    <string name="QRCode">QR Code</string>
+
+</resources>

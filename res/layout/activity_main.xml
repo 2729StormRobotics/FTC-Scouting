@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context="com.example.stormscouter.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@+id/txt_team"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/Team_string"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txt_match"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/txt_team"
+        android:layout_below="@+id/txt_team"
+        android:layout_marginTop="126dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/Match_string"
+        android:inputType="number" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/txt_match"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="64dp" >
+
+        <RadioButton
+            android1:id="@+id/red"
+            android1:layout_width="150dp"
+            android1:layout_height="wrap_content"
+            android1:text="@string/Red" />
+
+        <RadioButton
+            android1:id="@+id/blue"
+            android1:layout_width="150dp"
+            android1:layout_height="wrap_content"
+            android1:text="@string/Blue" />
+    </RadioGroup>
+
+    <Button
+        android1:id="@+id/begin"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/radioGroup1"
+        android1:layout_below="@+id/radioGroup1"
+        android1:layout_marginTop="45dp"
+        android1:text="@string/begin_match" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stormscouter.AutoActivity"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/bg_gradient">
+
+    <CheckBox
+        android:id="@+id/check_ramp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="103dp"
+        android:text="@string/bpzf" />
+
+    <CheckBox
+        android:id="@+id/check_kick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/check_ramp"
+        android:layout_below="@+id/check_ramp"
+        android:layout_marginTop="55dp"
+        android:text="@string/kickstand" />
+
+    <CheckBox
+        android:id="@+id/check_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/check_kick"
+        android:layout_below="@+id/check_kick"
+        android:layout_marginTop="51dp"
+        android:text="@string/centerauto" />
+
+    <Button
+        android:id="@+id/autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/check_center"
+        android:layout_below="@+id/check_center"
+        android:layout_marginTop="62dp"
+        android:text="@string/autoroll" />
+
+    <Button
+        android:id="@+id/rollpz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/check_kick"
+        android:layout_below="@+id/autor"
+        android:layout_marginTop="59dp"
+        android:text="@string/rollauto" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rollpz"
+        android:layout_below="@+id/rollpz"
+        android:layout_marginTop="34dp"
+        android:text="@string/teleend" />
+
+</RelativeLayout>
+

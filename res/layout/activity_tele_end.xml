@@ -1,0 +1,204 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="10dp" >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="803dp"
+        android:orientation="vertical"
+        android:padding="10dp" 
+        android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/thirty" />
+
+    <Button
+        android:id="@+id/tmade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/made" />
+
+    <Button
+        android:id="@+id/tmiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tmade"
+        android:layout_alignBottom="@+id/tmade"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tmade"
+        android:text="@string/miss" />
+
+    <Button
+        android:id="@+id/tmadesub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tmade"
+        android:layout_below="@+id/tmade"
+        android:layout_marginTop="27dp"
+        android:text="@string/sub" />
+
+    <Button
+        android:id="@+id/tmisssub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tmadesub"
+        android:layout_alignBottom="@+id/tmadesub"
+        android:layout_alignLeft="@+id/tmiss"
+        android:text="@string/sub" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="134dp"
+        android:layout_toRightOf="@+id/tmiss"
+        android:text="@string/sixty" />
+
+    <Button
+        android:id="@+id/smade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tmiss"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginRight="60dp"
+        android:text="@string/made" />
+
+    <Button
+        android:id="@+id/smiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tmadesub"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginLeft="69dp"
+        android:text="@string/miss" />
+
+    <Button
+        android:id="@+id/smadesub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tmisssub"
+        android:layout_alignBottom="@+id/tmisssub"
+        android:layout_alignLeft="@+id/smade"
+        android:text="@string/sub" />
+
+    <Button
+        android:id="@+id/smisssub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/smadesub"
+        android:layout_alignBottom="@+id/smadesub"
+        android:layout_alignLeft="@+id/smiss"
+        android:text="@string/sub" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smadesub"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/smadesub"
+        android:text="@string/ninty" />
+
+    <Button
+        android:id="@+id/nmade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/made" />
+
+    <Button
+        android:id="@+id/nmiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nmade"
+        android:layout_alignBottom="@+id/nmade"
+        android:layout_centerHorizontal="true"
+        android:text="@string/miss" />
+
+    <Button
+        android:id="@+id/nmadesub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nmade"
+        android:layout_below="@+id/nmade"
+        android:layout_marginTop="30dp"
+        android:text="@string/sub" />
+
+    <Button
+        android:id="@+id/nmisssub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nmadesub"
+        android:layout_alignBottom="@+id/nmadesub"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sub" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nmadesub"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/smadesub"
+        android:text="@string/EndGame"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/movepz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tmisssub"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/botrolltopz" />
+
+    <Button
+        android:id="@+id/movefloor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movepz"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/smisssub"
+        android:text="@string/botrollofffloor" />
+
+    <Button
+        android:id="@+id/centergoalend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movefloor"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tmisssub"
+        android:text="@string/centergoalend" />
+
+    <Button
+        android:id="@+id/QR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centergoalend"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/smiss"
+        android:text="@string/QRCode" />
+
+    </RelativeLayout>
+    </ScrollView>
+
