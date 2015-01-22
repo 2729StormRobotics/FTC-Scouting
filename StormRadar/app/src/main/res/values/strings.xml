@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Storm Radar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- First team setup variables -->
+    <string name="team">Team One Number</string>
+    <string name="match">Match Number</string>
+
+    <!-- Second team setup variables -->
+    <string name="team2">Team Two Number</string>
+    <string name="match2">Match Number</string>
+
+    <!-- Universal Strings -->
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="begin">Begin Match</string>
+    <string name="made">Made: </string>
+    <string name="miss">Miss: </string>
+    <string name="rgtopz">Roll to park zone</string>
+    <string name="ramptofloor">Ramp to floor</string>
+    <string name="knock">Knock Stand Over</string>
+    <string name="sub">_</string>
+    <string name="bottopz">Bot/Roll to park zone</string>
+    <string name="bottoramp">Bot/Roll off floor</string>
+    <string name="Center">Center Goal Scored</string>
+    <string name="title_activity_match">MatchActivity</string>
+
+</resources>
