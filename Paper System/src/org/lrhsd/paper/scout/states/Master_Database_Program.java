@@ -6,7 +6,6 @@ import javax.swing.JLabel;
 import javax.swing.JTabbedPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
-import javax.swing.JTextField;
 import javax.swing.DefaultRowSorter;
 import javax.swing.SortOrder;
 import javax.swing.RowSorter;
@@ -14,7 +13,7 @@ import javax.swing.JComboBox;
 
 import java.awt.BorderLayout;
 
-import javax.swing.table.TableModel;
+
 import javax.swing.table.DefaultTableModel;
 
 import java.awt.event.ActionListener;
@@ -34,7 +33,7 @@ public class Master_Database_Program extends JTabbedPane{
 	//Panels for tabs
 	JPanel pTeam = new JPanel(), pSort = new JPanel(), pT = new JPanel(), pAlliance = new JPanel();
 	//Jbuttons for programs
-	JButton sort = new JButton("Sort"), find = new JButton("Choose team to add"), cTeam = new JButton("Create team analysis"), 
+	JButton sort = new JButton("Sort"), find = new JButton("Choose team to add"),cT = new JButton("Choose team"), cTeam = new JButton("Create team analysis"), 
 			cAll = new JButton("Create Alliance analysis"), cR1 = new JButton("Red 1"), cR2 = new JButton("Red 2"), cB1 =  new JButton("Blue 1"), cB2 = new JButton("Blue 2"),submit = new JButton("Submit"), 
 			create = new JButton("Generate team files");
 	//Frame
@@ -58,7 +57,8 @@ public class Master_Database_Program extends JTabbedPane{
 	//Some titles used for JFileChooser
 	String[] places = new String[]{"Red 1", "Red 2", "Blue 1", "Blue 2"};
 	//Search Tab text fields
-	JLabel eTeam = new JLabel("Choose Team"), eAl1 = new JLabel("Red alliance 1"), eAl2 = new JLabel("Red alliance 2"), eAl3 = new JLabel("Blue Alliance 1"), eAl4 = new JLabel("Blue Alliance 2");
+	JLabel eTeam = new JLabel("Choose Team"), eAl1 = new JLabel("Red alliance 1"), eAl2 = new JLabel("Red alliance 2"), 
+			eAl3 = new JLabel("Blue Alliance 1"), eAl4 = new JLabel("Blue Alliance 2");
 	//File string used to read analysis directory
 	String fileDir = "";
 	public void actions(){
@@ -191,9 +191,9 @@ public class Master_Database_Program extends JTabbedPane{
 			    fil.setDialogTitle("Choose where to download team files to");
 				fil.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 				int returnVal = fil.showOpenDialog(Master_Database_Program.this);
-				fileDir = fil.getSelectedFile().toString();
 				System.out.println("File directory is: " + fileDir);
 				if(returnVal == JFileChooser.APPROVE_OPTION){
+					fileDir = fil.getSelectedFile().toString();
 				for(int i = 0; i < _team.getModel().getRowCount(); ++i){
 					DefaultTableModel mode = (DefaultTableModel)_team.getModel();
 					File f = new File(fil.getSelectedFile().toString(), "Team " + mode.getValueAt(i, 0) + ".txt");
@@ -228,7 +228,8 @@ public class Master_Database_Program extends JTabbedPane{
 					try {
 						BufferedReader read = new BufferedReader(new FileReader(fi));
 						String text = read.readLine();
-					    eAl1.setText("Team: " + text.substring(0, text.indexOf(",")));
+						read.close();
+					    eAl1.setText("Team " + text.substring(0, text.indexOf(",")));
 						
 					} catch (IOException e) {
 						// TODO: handle exception
@@ -251,7 +252,8 @@ public class Master_Database_Program extends JTabbedPane{
 					try {
 						BufferedReader read = new BufferedReader(new FileReader(fi));
 						String text = read.readLine();
-					    eAl2.setText("Team: " + text.substring(0, text.indexOf(",")));
+					    read.close();
+						eAl2.setText("Team " + text.substring(0, text.indexOf(",")));
 						
 					} catch (IOException eve) {
 						// TODO: handle exception
@@ -274,7 +276,8 @@ public class Master_Database_Program extends JTabbedPane{
 					try {
 						BufferedReader read = new BufferedReader(new FileReader(fi));
 						String text = read.readLine();
-					    eAl3.setText("Team: " + text.substring(0, text.indexOf(",")));
+						read.close();
+					    eAl3.setText("Team " + text.substring(0, text.indexOf(",")));
 						
 					} catch (IOException ev) {
 						// TODO: handle exception
@@ -297,7 +300,8 @@ public class Master_Database_Program extends JTabbedPane{
 					try {
 						BufferedReader read = new BufferedReader(new FileReader(fi));
 						String text = read.readLine();
-					    eAl4.setText("Team: " + text.substring(0, text.indexOf(",")));
+						read.close();
+					    eAl4.setText("Team " + text.substring(0, text.indexOf(",")));
 						
 					} catch (IOException ex) {
 						// TODO: handle exception
@@ -311,28 +315,112 @@ public class Master_Database_Program extends JTabbedPane{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-		        File fOne = new File(fileDir, eAl1.getText().toString().substring(eAl1.getText().toString().indexOf(" ") + 1, eAl1.getText().toString().length()) + ".txt"),
-		             fTwo = new File(fileDir, eAl2.getText().toString().substring(eAl2.getText().toString().indexOf(" ") + 1, eAl2.getText().toString().length()) + ".txt"),
-		             fThree = new File(fileDir, eAl3.getText().toString().substring(eAl3.getText().toString().indexOf(" ") + 1, eAl3.getText().toString().length()) + ".txt"),
-		             fFour = new File(fileDir, eAl4.getText().toString().substring(eAl4.getText().toString().indexOf(" ") + 1, eAl4.getText().toString().length()) + ".txt");
+		        File fOne = new File(fileDir, eAl1.getText().toString()+ ".txt"),
+		             fTwo = new File(fileDir, eAl2.getText().toString()+ ".txt"),
+		             fThree = new File(fileDir, eAl3.getText().toString() + ".txt"),
+		             fFour = new File(fileDir, eAl4.getText().toString()+ ".txt");
 		        try{
 		        	BufferedReader rOne = new BufferedReader(new FileReader(fOne)), rTwo = new BufferedReader(new FileReader(fTwo)), rThree = new BufferedReader(new FileReader(fThree)), rFour = new BufferedReader(new FileReader(fFour));
 		        	String sOne = rOne.readLine(), sTwo = rTwo.readLine(), sThree = rThree.readLine(), sFour = rFour.readLine();
 		            CascadeEffect one = new CascadeEffect(sOne), two = new CascadeEffect(sTwo), three = new CascadeEffect(sThree), four = new CascadeEffect(sFour);
+		            rOne.close(); rTwo.close(); rThree.close(); rFour.close();
 		            Alliance red = new Alliance(one, two), blue = new Alliance(three, four);
 		            Predict predict = new Predict(red, blue);
 		            
-		            File f = new File(fileDir, "Red: " + red.getTeamOne() + " and " + red.getTeamTwo() + "; " + "Blue: " + blue.getTeamOne() + " and " + blue.getTeamTwo() + ";");
+		            File f = new File(fileDir, "Red " + red.getTeamOne() + " and " + red.getTeamTwo() + "; " + "Blue " + blue.getTeamOne() + " and " + blue.getTeamTwo() + ".txt");
 		            BufferedWriter match = new BufferedWriter(new FileWriter(f));
 		            match.write("*************************RED Alliance*************************");
 		            match.newLine();
-		            match.write("Overall effciency for bot from ramp to floor: " + red.calculate_team_bot_to_floor_auto());
 		            match.newLine();
-		            
-		            match.write("Overall effciency for kickstand being knocked over: " + red.calculate_team_bot_kickstand());
-		            match.write("Overall effciency for Center goal being scored in the auto: " + red.calculate_team_centergoal_auto());
-		            match.write("Overall effciency for the rolling goal being scored: " + red.calculate_team_rolling_score_auto());
-		            match.write("Overall");
+		            match.write("Overall effciency for bot from ramp to floor: " + (red.calculate_team_bot_to_floor_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for kickstand being knocked over: " + (red.calculate_team_bot_kickstand() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for Center goal being scored in the auto: " + (red.calculate_team_centergoal_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for the rolling goal being scored: " + (red.calculate_team_rolling_score_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for the rolling goal being moved to pz: " + (red.calculate_team_rolling_goal_pz_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for scoring in the thirty cm goal being scored: " + (red.calculate_team_thirty_cm() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for scoring in the sixty cm goal being scored: " + (red.calculate_team_sixty_cm() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for scoring in the ninty cm goal being scored: " + (red.calculate_team_ninty_cm() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for moving bot or rolling goal to pz during end game: " + (red.calculate_team_bot_pz() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for moving bot or rolling goal off floor during end game: " + (red.calculate_team_bot_floor() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall score: " + predict.predict_red_score());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall thirty cm scored: " + predict.predict_red_thirty());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall sixty cm scored: " + predict.predict_red_sixty());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall ninty cm scored: " + predict.predict_red_ninty());
+		            match.newLine();
+		            match.newLine();
+		            match.write("*************************BLUE Alliance*************************");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for bot from ramp to floor: " + (blue.calculate_team_bot_to_floor_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for kickstand being knocked over: " + (blue.calculate_team_bot_kickstand() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for Center goal being scored in the auto: " + (blue.calculate_team_centergoal_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for the rolling goal being scored: " + (blue.calculate_team_rolling_score_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for the rolling goal being moved to pz: " + (blue.calculate_team_rolling_goal_pz_auto() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for scoring in the thirty cm goal being scored: " + (blue.calculate_team_thirty_cm()  * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for scoring in the sixty cm goal being scored: " + (blue.calculate_team_sixty_cm() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for scoring in the ninty cm goal being scored: " + (blue.calculate_team_ninty_cm() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for moving bot or rolling goal to pz during end game: " + (blue.calculate_team_bot_pz() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall effciency for moving bot or rolling goal off floor during end game: " + (blue.calculate_team_bot_floor() * 10.0) + "%");
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall score: " + predict.predict_blue_score());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall thirty cm scored: " + predict.predict_blue_thirty());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall sixty cm scored: " + predict.predict_blue_sixty());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Overall ninty cm scored: " + predict.predict_blue_ninty());
+		            match.newLine();
+		            match.newLine();
+		            match.write("Prediction of winner: " + predict.predict_winner());
+		            match.close();
 		        }catch(IOException p){
 		        	p.printStackTrace();
 		        }
@@ -340,6 +428,97 @@ public class Master_Database_Program extends JTabbedPane{
 			    
 			}
 		
+			
+		});
+		cT.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				JFileChooser f = new JFileChooser();
+				f.setDialogTitle("Choose team");
+				int returnVal = f.showOpenDialog(Master_Database_Program.this);
+				if(returnVal == JFileChooser.APPROVE_OPTION){
+					File fi = new File(f.getSelectedFile().toString());
+					try {
+						BufferedReader read = new BufferedReader(new FileReader(fi));
+						String text = read.readLine();
+					    read.close();
+						eTeam.setText("Team " + text.substring(0, text.indexOf(",")));
+						
+					} catch (IOException eve) {
+						// TODO: handle exception
+						eve.printStackTrace();
+					}
+				}
+			}
+			
+		});
+		cTeam.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				File f = new File(fileDir, eTeam.getText().toString() + ".txt");
+				try{
+				BufferedReader read = new BufferedReader(new FileReader(f));
+				String text = read.readLine();
+				CascadeEffect cas = new CascadeEffect(text);
+				Team opp = new Team(cas);
+				Predict predict = new Predict(opp);
+				File team = new File(fileDir, "Team " + cas.getTeamNum() + "Probability");
+				BufferedWriter tm = new BufferedWriter(new FileWriter(team));
+				
+				    tm.write("*************************Team " +  cas.getTeamNum() + "*************************");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for bot from ramp to floor: " + (opp.calculate_team_bot_to_floor_auto() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for kickstand being knocked over: " + (opp.calculate_team_bot_kickstand() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for Center goal being scored in the auto: " + (opp.calculate_team_centergoal_auto() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for the rolling goal being scored: " + (opp.calculate_team_rolling_score_auto() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for the rolling goal being moved to pz: " + (opp.calculate_team_rolling_goal_pz_auto() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for scoring in the thirty cm goal being scored: " + (opp.calculate_team_thirty_cm()  * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for scoring in the sixty cm goal being scored: " + (opp.calculate_team_sixty_cm() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for scoring in the ninty cm goal being scored: " + (opp.calculate_team_ninty_cm() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for moving bot or rolling goal to pz during end game: " + (opp.calculate_team_bot_pz() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall effciency for moving bot or rolling goal off floor during end game: " + (opp.calculate_team_bot_floor() * 10.0) + "%");
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall score: " + predict.predict_team_score());
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall thirty cm scored: " + predict.predict_team_thirty());
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall sixty cm scored: " + predict.predict_team_sixty());
+		            tm.newLine();
+		            tm.newLine();
+		            tm.write("Overall ninty cm scored: " + predict.predict_team_ninty());
+		            tm.newLine();
+		            tm.newLine();
+		            tm.close();
+				}catch(IOException t){
+					t.printStackTrace();
+				}
+			}
 			
 		});
 	}
@@ -381,7 +560,19 @@ public class Master_Database_Program extends JTabbedPane{
 	    pAlliance.add(cR2);
 	    pAlliance.add(cB1);
 	    pAlliance.add(cB2);
-		this.addTab("Team", null, pAlliance, "Choose a team to synthesize data from");
+		this.addTab("Alliance", null, pAlliance, "Choose an alliance to synthesize data from");
+	}
+	public void teamSearch(){
+		actions();
+		pT.setLayout(null);
+		eTeam.setBounds(425, 10, 100, 50);
+		cT.setBounds(415, 100, 100, 50);
+		cTeam.setBounds(415, 200, 100, 50);
+		pT.add(eTeam);
+		pT.add(cT);
+		pT.add(cTeam);
+		this.addTab("Team", null, pT, "Choose a team to synthesize data from");
+		
 	}
 	public Master_Database_Program() {
 		// TODO Auto-generated constructor stub
@@ -389,6 +580,7 @@ public class Master_Database_Program extends JTabbedPane{
 		Manifest();
 	    sortTab();
 	    allianceSearch();
+	    teamSearch();
 	    frame.setSize(1000, 1000);
 	    frame.setVisible(true);
 	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
