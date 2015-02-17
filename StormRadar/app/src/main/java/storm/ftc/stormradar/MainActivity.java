@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -23,6 +24,30 @@ public class MainActivity extends ActionBarActivity {
                 team2 = (EditText) this.findViewById(R.id.team2),
                 match = (EditText) this.findViewById(R.id.match),
                 match2 = (EditText) this.findViewById(R.id.match2);
+        final RadioButton red2 = (RadioButton) this.findViewById(R.id.btn_red2),
+                blue2 = (RadioButton) this.findViewById(R.id.btn_blue2);
+        red2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(red2.isChecked()){
+                    red2.setBackgroundResource(R.drawable.red_clicked);
+                }
+                else{
+                    red2.setBackgroundResource(R.drawable.red_unclick);
+                }
+            }
+        });
+        blue2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(blue2.isChecked()){
+                    blue2.setBackgroundResource(R.drawable.blue_checked);
+                }
+                else{
+                    blue2.setBackgroundResource(R.drawable.blue_unclick);
+                }
+            }
+        });
 
 
     }

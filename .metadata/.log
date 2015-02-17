@@ -1,0 +1,3556 @@
+!SESSION 2015-02-17 10:15:50.551 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -data D:\FTC-Scouting -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.ui.intro 4 0 2015-02-17 10:16:02.407
+!MESSAGE C:\Users\Tommy\Documents\code\eclipse java\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Tommy\Documents\code\eclipse java\eclipse\WPILib Intro\sample.xml (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.parse(IntroContentParser.java:94)
+	at org.eclipse.ui.internal.intro.impl.model.loader.IntroContentParser.<init>(IntroContentParser.java:56)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadDOM(IntroModelRoot.java:885)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.processConfigExtension(IntroModelRoot.java:411)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveConfigExtensions(IntroModelRoot.java:381)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.resolveChildren(IntroModelRoot.java:242)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroContainer.getChildren(AbstractIntroContainer.java:86)
+	at org.eclipse.ui.internal.intro.impl.model.IntroModelRoot.loadModel(IntroModelRoot.java:164)
+	at org.eclipse.ui.internal.intro.impl.model.loader.BaseExtensionPointManager.loadModel(BaseExtensionPointManager.java:95)
+	at org.eclipse.ui.internal.intro.impl.model.loader.ExtensionPointManager.loadCurrentModel(ExtensionPointManager.java:61)
+	at org.eclipse.ui.internal.intro.impl.model.loader.ExtensionPointManager.getCurrentModel(ExtensionPointManager.java:73)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.init(CustomizableIntroPart.java:154)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.init(ViewIntroAdapterPart.java:207)
+	at org.eclipse.ui.internal.ViewReference.initialize(ViewReference.java:143)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:857)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:333)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:71)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:53)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:526)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:511)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:95)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:102)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:649)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.handleEvent(PartRenderingEngine.java:134)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:290)
+	at org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon$3.handleEvent(CleanupAddon.java:265)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4688)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:205)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:290)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:574)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:543)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:610)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:590)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:544)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:533)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1026)
+	at org.eclipse.ui.internal.WorkbenchPage.showPart(WorkbenchPage.java:1192)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1176)
+	at org.eclipse.ui.internal.WorkbenchPage$12.run(WorkbenchPage.java:4077)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4074)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4049)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.createIntro(WorkbenchIntroManager.java:178)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:125)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:190)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:564)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:696)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:877)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:119)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:84)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:73)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1396)
+	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1369)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.updateActiveShell(WorkbenchSourceProvider.java:924)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.getCurrentState(WorkbenchSourceProvider.java:133)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider$6.handleEvent(WorkbenchSourceProvider.java:684)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1667)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:2151)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4608)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2075)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4977)
+	at org.eclipse.swt.internal.win32.OS.BringWindowToTop(Native Method)
+	at org.eclipse.swt.widgets.Decorations.bringToTop(Decorations.java:231)
+	at org.eclipse.swt.widgets.Shell.open(Shell.java:1217)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.postProcess(WBWRenderer.java:767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:649)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:735)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1038)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:138)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:610)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.336
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.336
+!MESSAGE Install necessary for tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.430
+!MESSAGE 	ZipEntry sfx-2014.11.01/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.430
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.446
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.446
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/bool/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.446
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/bool/.jrubyfx_cache/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.446
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.461
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/.jrubyfx_cache/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.461
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/pid/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.461
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/pid/.jrubyfx_cache/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.461
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/subsystem/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.461
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/subsystem/.jrubyfx_cache/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.477
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/tab-switcher/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.477
+!MESSAGE 	ZipEntry OutlineViewer.jar: 279567
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.539
+!MESSAGE 	ZipEntry RobotBuilder.jar: 2238543
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.726
+!MESSAGE 	ZipEntry SmartDashboard.jar: 2335321
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:07.898
+!MESSAGE 	ZipEntry java-installer.jar: 2977723
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.070
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/bool/.jrubyfx_cache/774a63170b63edbd5e88db7126df6db9645b436c.rb: 2335
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.116
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/bool/BadBool.fxml: 920
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.116
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/bool/icon.png: 1188
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.148
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/bool/icon.svg: 2314
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.163
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/.jrubyfx_cache/ce51af7b129edfccc7586fa5960223cade268b4f.rb: 4722
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.163
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/command.fxml: 2608
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.179
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/icon.png: 1027
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.210
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/icon.svg: 3614
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.226
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/media-playback-start.png: 677
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.257
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/command/media-playback-stop.png: 297
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.272
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/manifest.yml: 1277
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.288
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/pid/.jrubyfx_cache/cc169a7ed334897bab8166f0453a93a3f710aa61.rb: 5685
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.319
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/pid/PIDParent.fxml: 2297
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.335
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/pid/pidicon.png: 2184
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.350
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/pid/pidicon.svg: 20932
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.366
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/subsystem/.jrubyfx_cache/c43f0db19d95c1f21829c7e961d536a3fbb293dd.rb: 3121
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.382
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/subsystem/subsystem.fxml: 1408
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.413
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/tab-switcher/icon.png: 1485
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.413
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/tab-switcher/icon.svg: 3897
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.444
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/built-in/tab-switcher/tab_switcher.rb: 1768
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.444
+!MESSAGE 	ZipEntry sfx-2014.11.01/plugins/livewindowplugin.jar: 234804
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:08.756
+!MESSAGE 	ZipEntry sfx-2014.11.01/sfx.jar: 28036895
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 4 0 2015-02-17 10:16:10.784
+!MESSAGE Error installing tools
+!STACK 0
+edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller$InstallException: Install encountered a problem
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller.install(AbstractInstaller.java:175)
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller$1.run(AbstractInstaller.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: There is not enough space on the disk
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller.copyStreams(AbstractInstaller.java:184)
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller.install(AbstractInstaller.java:165)
+	... 2 more
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 4 0 2015-02-17 10:16:10.800
+!MESSAGE Unable to install tools: There is not enough space on the disk. See console for details.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:10.800
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:10.800
+!MESSAGE Install necessary for java
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.064
+!MESSAGE 	ZipEntry ant/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.064
+!MESSAGE 	ZipEntry javadoc/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.064
+!MESSAGE 	ZipEntry javadoc/META-INF/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/com/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/com/ni/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/edu/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/edu/wpi/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.080
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.096
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.096
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/buttons/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.096
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/buttons/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.096
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/can/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.096
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/can/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.096
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.111
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/command/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.111
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/command/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.111
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/communication/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.236
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/communication/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.236
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/hal/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.236
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/hal/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.252
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/interfaces/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.252
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/interfaces/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.252
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/internal/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.252
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/internal/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.267
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/livewindow/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.267
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/livewindow/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.267
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/smartdashboard/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.267
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/smartdashboard/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.267
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/util/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.267
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/util/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/vision/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/vision/class-use/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry lib/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry sim/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry sim/lib/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry sim/tools/: 0
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.283
+!MESSAGE 	ZipEntry ant/ant-classloadertask.jar: 70515
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.298
+!MESSAGE 	ZipEntry ant/ant-contrib.jar: 194050
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.330
+!MESSAGE 	ZipEntry ant/build.properties: 1310
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.345
+!MESSAGE 	ZipEntry ant/build.xml: 9423
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.470
+!MESSAGE 	ZipEntry ant/frcdebug: 176
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.486
+!MESSAGE 	ZipEntry ant/jsch-0.1.50.jar: 249282
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.517
+!MESSAGE 	ZipEntry ant/netconsole-host: 13856
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.532
+!MESSAGE 	ZipEntry ant/robotCommand: 141
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.548
+!MESSAGE 	ZipEntry ant/robotDebugCommand: 225
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.579
+!MESSAGE 	ZipEntry javadoc/META-INF/MANIFEST.MF: 126
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.595
+!MESSAGE 	ZipEntry javadoc/allclasses-frame.html: 100000
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.610
+!MESSAGE 	ZipEntry javadoc/allclasses-noframe.html: 86620
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.766
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.AIMGrade.html: 19420
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:21.766
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.AIMGradeReport.html: 23799
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.141
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.AVIInfo.html: 19996
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.156
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Annulus.html: 18066
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.203
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ArcInfo.html: 17149
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.219
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ArcInfo2.html: 17684
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.266
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.AttenuateMode.html: 18264
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.281
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.AxisOrientation.html: 18287
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.328
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.AxisReport.html: 18378
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.344
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BCGOptions.html: 16846
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.390
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Barcode2DCellShape.html: 18476
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.422
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Barcode2DContrast.html: 19134
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.453
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Barcode2DInfo.html: 20414
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.468
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Barcode2DSearchMode.html: 19171
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.546
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Barcode2DShape.html: 18396
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.578
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Barcode2DType.html: 20872
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.624
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BarcodeInfo.html: 19397
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.640
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BarcodeType.html: 22632
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.671
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BestCircle.html: 18211
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.702
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BestCircle2.html: 19185
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.749
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BestEllipse.html: 21307
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.765
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BestEllipse2.html: 22741
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.796
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BestLine.html: 19504
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.827
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BorderMethod.html: 18707
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.858
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BrowserFrameStyle.html: 20470
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.890
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BrowserLocation.html: 18378
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.905
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.BrowserOptions.html: 20900
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.936
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ButtonLabel.html: 19139
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.952
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CIELabValue.html: 17198
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:22.999
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CIEXYZValue.html: 17216
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.014
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationAxisInfo.html: 18384
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.046
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationInfo.html: 22963
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.124
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationLearnSetupInfo.html: 20934
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.155
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationMode.html: 19390
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.170
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationMode2.html: 20054
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.202
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationPoints.html: 17886
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.233
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationROI.html: 19923
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.280
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationReferencePoints.html: 20227
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.295
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationThumbnailType.html: 19318
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.342
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CalibrationUnit.html: 23508
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.358
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CaliperOptions.html: 17728
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.389
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CaliperReport.html: 19056
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.420
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CaliperToolResult.html: 12409
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.467
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CannyOptions.html: 17523
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.482
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharInfo.html: 18234
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.514
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharInfo2.html: 18764
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.654
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharReport.html: 18849
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.670
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharReport2.html: 19960
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.716
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharReport3.html: 20088
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.716
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharSet.html: 8517
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.763
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CharacterStatistics.html: 18161
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.794
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CircleDescriptor.html: 16698
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.826
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CircleFeature.html: 17020
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.857
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CircleFitOptions.html: 17707
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.888
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CircleMatch.html: 17369
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.919
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CircleReport.html: 17309
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.935
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClampMax2Report.html: 18211
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.950
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClampOverlaySettings.html: 23060
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:23.982
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClampPoints.html: 17502
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.013
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClampResults.html: 17565
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.044
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClampSettings.html: 17086
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.106
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassScore.html: 16981
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.122
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifiedCurve.html: 19162
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.138
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifiedDisparity.html: 20505
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.169
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierAccuracyReport.html: 18845
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.184
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierEngineType.html: 19234
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.231
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierReport.html: 18938
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.262
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierReportAdvanced.html: 20397
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.294
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierSampleInfo.html: 18456
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.309
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierSession.html: 8616
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.372
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifierType.html: 19427
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.403
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClassifyDistancesReport.html: 17165
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.418
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClosedContour.html: 16494
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.450
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ClosedCurveFeature.html: 17299
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.465
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorClassificationResolution.html: 19715
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.528
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorHistogramReport.html: 18955
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.559
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorIgnoreMode.html: 19402
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.590
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorInformation.html: 16660
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.606
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorMode.html: 19744
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.621
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorOptions.html: 18275
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.668
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorSegmenationOptions.html: 19081
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.684
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColorSensitivity.html: 18973
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.715
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ColumnProcessingMode.html: 18602
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.762
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ComparisonFunction.html: 20056
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.793
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Complex.html: 16158
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.824
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ComplexPlane.html: 19078
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.840
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CompressionType.html: 18965
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.871
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ComputeDistancesReport.html: 18002
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.886
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConcentricEdgeFitOptions.html: 18153
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.933
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConcentricRake2Result.html: 10951
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.964
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConcentricRakeDirection.html: 18731
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:24.996
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConcentricRakeReport.html: 20484
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.011
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConcentricRakeReport2.html: 18955
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.058
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConnectionConstraint.html: 18039
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.074
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConnectionConstraintType.html: 20537
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.105
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Connectivity.html: 18282
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.120
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConstCurveFeature.html: 18206
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.167
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConstructROIOptions.html: 19356
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.198
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ConstructROIOptions2.html: 19936
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.214
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourComputeCurvatureReport.html: 17441
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.245
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourFitLineReport.html: 17953
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.292
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourFitPolynomialReport.html: 17803
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.308
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourFitSplineReport.html: 16977
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.354
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourInfo.html: 18306
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.370
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourInfo2.html: 22131
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.417
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourInfoReport.html: 20351
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.432
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourOverlaySettings.html: 18386
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.464
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourPoint.html: 17958
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.479
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourSetupMatchPatternResult.html: 11659
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.526
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContourType.html: 21405
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.542
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ContrastMode.html: 18777
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.573
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CooccurrenceOptions.html: 17381
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.604
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CoordinateSystem.html: 18215
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.651
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CoordinateTransform.html: 18798
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.666
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CoordinateTransform2.html: 18080
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.698
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CornerFeature.html: 18040
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.729
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CurvatureAnalysisReport.html: 17024
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.807
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Curve.html: 18642
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.854
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CurveOptions.html: 20970
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.916
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.CurveParameters.html: 20148
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:25.978
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixCellFillMode.html: 19230
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.025
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixCellFilterMode.html: 22740
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.072
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixCellSampleSize.html: 21685
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.119
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixDemodulationMode.html: 20549
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.166
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixDescriptionOptions.html: 23171
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.228
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixECC.html: 21085
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.290
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixGradingMode.html: 18622
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.337
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixMirrorMode.html: 19153
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.384
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixOptions.html: 20994
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.712
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixPolarity.html: 19215
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.758
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixReport.html: 29206
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.805
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixRotationMode.html: 20226
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.852
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixSearchOptions.html: 23440
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.883
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixSizeOptions.html: 17432
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.883
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DataMatrixSubtype.html: 19219
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.930
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectCirclesResult.html: 12460
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:26.992
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectEllipsesResult.html: 12434
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.367
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectExtremesOptions.html: 16924
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.414
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectExtremesResult.html: 12424
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.476
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectLinesResult.html: 12368
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.523
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectRectanglesResult.html: 12444
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.585
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DetectionMode.html: 18303
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.648
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Direction3D.html: 19035
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.726
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Disparity.html: 17800
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.788
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DisplacementVector.html: 16644
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.804
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DisplayMapping.html: 18076
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.897
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DistortionModel.html: 18929
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.944
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DistortionModelParams.html: 19025
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.960
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DivisionModel.html: 16086
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:27.991
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DrawMode.html: 19470
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.053
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.DrawTextOptions.html: 21020
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.069
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeFilterSize.html: 18764
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.116
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeInfo.html: 19717
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.147
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeLocationReport.html: 16744
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.178
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeOptions.html: 18454
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.194
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeOptions2.html: 20260
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.209
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgePolarity.html: 17642
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.256
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgePolaritySearchMode.html: 19308
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.303
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeProcess.html: 19045
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.318
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeReport.html: 18783
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.350
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeReport2.html: 17447
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.381
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EdgeTool4Result.html: 10791
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.412
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EllipseDescriptor.html: 17894
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.428
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EllipseFeature.html: 18084
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.443
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EllipseMatch.html: 18452
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.490
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.EnumerateCustomKeysResult.html: 12579
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.537
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ErrorStatistics.html: 17696
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.568
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractContourDirection.html: 21989
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.615
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractContourReport.html: 17975
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.630
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractContourResult.html: 10991
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.662
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractContourSelection.html: 19167
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.677
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractCurvesResult.html: 12382
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.693
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractTextureFeaturesReport.html: 17929
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.708
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtractionMode.html: 18370
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.740
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ExtremeReport.html: 17113
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.755
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FeatureData.html: 23738
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.802
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FeatureType.html: 22842
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.818
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindCirclesResult.html: 12378
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.864
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindCircularEdgeOptions.html: 25381
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.896
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindCircularEdgeReport.html: 21119
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.927
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindConcentricEdgeOptions.html: 25635
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.989
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindConcentricEdgeReport.html: 23254
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:28.989
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindEdgeOptions2.html: 24844
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.036
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindEdgeReport.html: 16676
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.052
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindReferenceDirection.html: 22089
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.098
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindTransformMode.html: 18507
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.114
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindTransformRect2Result.html: 11625
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.130
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindTransformRectOptions2.html: 25631
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.176
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindTransformRects2Result.html: 11660
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.223
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FindTransformRectsOptions2.html: 26840
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.239
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FitCircleOptions.html: 17762
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.239
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FitEllipseOptions.html: 17790
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.286
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FitLineOptions.html: 17118
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.317
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FlattenType.html: 18267
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.348
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FlipAxis.html: 19516
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.379
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FocalLength.html: 16338
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.395
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.FontColor.html: 19476
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.410
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricAdvancedSetupDataOption.html: 18005
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.426
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricMatchingMode.html: 20112
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.442
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricMatchingSearchStrategy.html: 19851
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.473
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricPatternMatch.html: 22158
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.488
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricPatternMatch2.html: 26965
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.504
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricPatternMatch3.html: 24895
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.535
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GeometricSetupDataItem.html: 32493
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.551
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetBisectingLineResult.html: 10941
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.566
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetCalibrationInfoReport.html: 23438
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.691
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetCameraParametersReport.html: 19540
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.722
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetClassifierSampleInfoResult.html: 10820
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.754
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetFileInfoResult.html: 12554
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.769
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetGeometricFeaturesFromCurvesResult.html: 12682
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.785
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetGeometricTemplateFeatureInfoResult.html: 12696
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.800
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetImageSizeResult.html: 10420
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.816
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetMidLineResult.html: 10883
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.847
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetParticleClassifierOptions2Result.html: 11344
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.878
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetParticleClassifierOptionsResult.html: 11392
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.910
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetPerpendicularLineResult.html: 11444
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.925
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetPointsOnContourResult.html: 12500
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.941
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GetPointsOnLineResult.html: 12416
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:29.988
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GridDescriptor.html: 17539
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.003
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.GroupBehavior.html: 18762
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.050
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.HSIValue.html: 17004
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.097
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.HSLValue.html: 16990
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.128
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.HSVValue.html: 16984
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.159
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.HistogramReport.html: 19368
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.175
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxAttributeInformation.html: 19291
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.206
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxAttributeType.html: 22384
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.253
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxAttributeVisibility.html: 20192
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.284
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxBayerAlgorithm.html: 19271
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.300
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxBayerPattern.html: 21185
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.346
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxBufferNumberMode.html: 19940
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.362
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxBusType.html: 21841
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.409
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxCameraControlMode.html: 19457
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.424
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxCameraFile.html: 17747
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.471
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxCameraInformation.html: 25071
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.487
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxDestinationMode.html: 19922
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.518
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxEnumItem.html: 17636
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.534
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxIncompleteBufferMode.html: 19618
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.549
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxInterfaceFileFlags.html: 19530
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.612
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxLostPacketMode.html: 19264
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.643
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxOutputImageType.html: 21512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.690
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxOverwriteMode.html: 19764
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.705
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxPixelSignedness.html: 19884
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.721
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxPnpEvent.html: 19501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.768
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxStreamChannelMode.html: 19458
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.799
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxUSBConnectionSpeed.html: 20620
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.830
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.IMAQdxValueType.html: 21501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.846
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Image.html: 8452
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.877
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ImageFeatureMode.html: 18947
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.892
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ImageInfo.html: 20891
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.955
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ImageSize.html: 16242
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.955
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ImageType.html: 20874
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:30.970
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.InspectionAlignment.html: 17793
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.002
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.InspectionOptions.html: 20112
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.017
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.InternalParameters.html: 18387
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.033
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.InterpolatePointsResult.html: 12246
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.064
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.InterpolationMethod.html: 20045
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.142
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.JPEG2000FileAdvancedOptions.html: 19145
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.173
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.KernelFamily.html: 19297
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.204
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LCDOptions.html: 17312
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.236
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LCDReport.html: 17391
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.251
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LCDSegments.html: 14509
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.267
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LabelToROIReport.html: 17708
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.282
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnCalibrationOptions.html: 20015
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.314
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnColorPatternOptions.html: 20852
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.329
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnGeometricPatternAdvancedOptions.html: 20751
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.345
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnGeometricPatternAdvancedOptions2.html: 19719
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.376
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnPatternAdvancedOptions.html: 18759
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.392
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnPatternAdvancedRotationOptions.html: 23252
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.454
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearnPatternAdvancedShiftOptions.html: 20646
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.501
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LearningMode.html: 18897
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.532
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LegFeature.html: 18760
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.548
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LevelType.html: 18039
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.579
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Line.html: 16904
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.610
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineDescriptor.html: 16612
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.641
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineEquation.html: 16824
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.672
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineFeature.html: 18342
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.688
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineFloat.html: 17250
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.719
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineGaugeMethod.html: 19341
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.750
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineMatch.html: 18689
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.797
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LineProfile.html: 18694
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.844
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LinearAverages.html: 17782
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.860
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LinearAveragesMode.html: 20160
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.906
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.LocalThresholdMethod.html: 18579
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.922
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MappingMethod.html: 23287
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.953
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MaskToROIResult.html: 10617
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:31.984
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchColorPatternOptions.html: 24070
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.016
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchColorPatternResult.html: 12476
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.031
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchColorResult.html: 12174
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.062
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchGeometricPattern2Result.html: 12594
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.078
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchGeometricPattern3Result.html: 12634
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.094
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchGeometricPatternAdvancedOptions.html: 23993
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.125
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchGeometricPatternAdvancedOptions2.html: 25325
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.156
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchGeometricPatternAdvancedOptions3.html: 27181
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.187
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchGeometricPatternOptions.html: 21540
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.218
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchMode.html: 16794
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.250
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchMultipleGeometricPatternsResult.html: 12674
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.296
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchPattern2Result.html: 12450
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.312
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchPattern3Result.html: 12432
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.359
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchPatternAdvancedOptions.html: 20841
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.374
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchPatternOptions.html: 20549
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.421
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchShapeResult.html: 12418
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.437
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MatchingMode.html: 18356
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.468
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MathTransformMethod.html: 21110
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.484
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MaxGridSize.html: 16368
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.530
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MeasureParticlesCalibrationMode.html: 19758
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.546
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MeasureParticlesReport.html: 17041
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.577
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MeasurementType.html: 61194
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.608
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MeasurementValue.html: 41910
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.640
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MeterArc.html: 17810
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.671
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MeterArcMode.html: 18248
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.686
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MorphologyMethod.html: 23484
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.702
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MorphologyReconstructOperation.html: 19052
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.764
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MulticoreOperation.html: 19030
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.796
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.MultipleGeometricPattern.html: 8720
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.827
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.NearestNeighborClassResult.html: 18308
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.842
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.NearestNeighborMethod.html: 19256
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.858
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.NearestNeighborMetric.html: 19168
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.889
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.NearestNeighborOptions.html: 18602
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.905
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.NearestNeighborTrainingReport.html: 17469
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.920
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.NormalizationMethod.html: 19270
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.967
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.OCRProcessingOptions.html: 21097
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:32.998
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.OCRSpacingOptions.html: 21195
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.014
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ObjectType.html: 18179
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.030
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.OpenContour.html: 16406
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.061
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.OutlineMethod.html: 20195
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.108
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Overlay.html: 8490
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.123
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.OverlayTextOptions.html: 22974
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.139
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PairOfParallelLinePairsFeature.html: 19831
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.186
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PaletteType.html: 20237
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.217
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParallelLinePairFeature.html: 21152
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.232
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PartialCircle.html: 17990
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.248
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PartialEllipse.html: 19073
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.279
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierAutoThresholdOptions.html: 19849
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.310
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierLocalThresholdOptions.html: 20684
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.342
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierOptions.html: 17323
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.373
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierPreprocessingOptions.html: 22788
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.404
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierPreprocessingOptions2.html: 23103
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.435
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierThresholdType.html: 19679
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.451
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleClassifierType.html: 18721
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.560
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleFilterCriteria.html: 18496
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.576
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleFilterCriteria2.html: 19044
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.622
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleFilterOptions.html: 17514
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.638
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleFilterOptions2.html: 18043
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.669
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleInfoMode.html: 18387
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.700
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleReport.html: 24716
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.732
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ParticleType.html: 18249
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.747
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PatternMatch.html: 18831
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.794
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PhotometricMode.html: 18349
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.810
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Plane3D.html: 18914
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.825
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Point.html: 16008
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.856
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PointDouble.html: 16338
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.888
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PointDoublePair.html: 17550
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.934
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PointFloat.html: 16296
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.950
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PointSymbol.html: 18748
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.966
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PolarityType.html: 18210
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:33.997
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.PolyModel.html: 16731
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.028
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCellFilterMode.html: 22701
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.059
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCellSampleSize.html: 21814
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.106
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCodeDataToken.html: 17572
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.137
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCodeDescriptionOptions.html: 20073
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.168
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCodeReport.html: 29854
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.184
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCodeSearchOptions.html: 21711
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.215
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRCodeSizeOptions.html: 16706
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.231
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRDemodulationMode.html: 20435
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.246
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRDimensions.html: 40766
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.293
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRGradingMode.html: 17783
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.309
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRMirrorMode.html: 18873
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.324
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRModelType.html: 19297
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.356
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRPolarities.html: 18900
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.402
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRRotationMode.html: 20144
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.418
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QRStreamMode.html: 20787
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.434
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QuantifyData.html: 18814
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.480
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.QuantifyReport.html: 17573
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.527
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RGBU64Value.html: 17154
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.543
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RGBValue.html: 16986
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.590
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ROI.html: 8414
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.605
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ROILabel.html: 16802
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.636
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ROIProfile.html: 17274
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.652
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Rake2Result.html: 10731
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.668
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RakeDirection.html: 19253
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.699
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RakeOptions.html: 18958
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.714
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RakeProcessType.html: 19417
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.761
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RakeReport.html: 19905
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.777
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RakeReport2.html: 18412
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.792
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Range.html: 16116
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.839
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RangeDouble.html: 16426
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.855
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RangeFloat.html: 16386
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.917
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RangeLabel.html: 16832
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.948
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RangeSettingDouble.html: 17696
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:34.995
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RawData.html: 14944
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.042
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadClassifierFileMode.html: 19331
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.058
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadClassifierFileResult.html: 11567
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.104
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadMeterResult.html: 10628
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.120
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadOCRFileResult.html: 11619
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.151
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadPDF417BarcodeResult.html: 12460
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.167
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadResolution.html: 18867
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.214
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadStrategy.html: 18273
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.229
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadTextOptions.html: 20320
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.260
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadTextReport.html: 17709
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.292
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadTextReport2.html: 17765
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.323
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadTextReport3.html: 18762
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.354
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReadVisionFileResult.html: 10630
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.401
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Rect.html: 16874
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.432
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RectOrientation.html: 18350
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.463
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RectangleDescriptor.html: 17830
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.479
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RectangleFeature.html: 19088
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.526
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RectangleMatch.html: 18469
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.541
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ReferenceMode.html: 18280
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.572
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RefineMatchesResult.html: 13744
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.588
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RegistrationMethod.html: 18574
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.635
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RotatedRect.html: 17683
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.650
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RotationAngleRange.html: 16730
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.697
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.RoundingMode.html: 18335
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.713
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SampleScore.html: 17438
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.744
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ScalingMethod.html: 18311
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.838
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ScalingMode.html: 18190
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.853
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SearchArcInfo.html: 17542
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.900
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SearchDirection.html: 19699
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.900
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SearchLineInfo.html: 17613
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.947
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SearchStrategy.html: 19298
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.962
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SegmentInfo.html: 17898
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.978
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SegmentationDistanceLevel.html: 18951
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:35.994
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SelectParticleCriteria.html: 17968
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.009
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SettingType.html: 18750
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.040
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SetupMatchPatternData.html: 16476
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.118
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ShapeDetectionOptions.html: 18934
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.150
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ShapeMode.html: 18095
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.165
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ShapeReport.html: 18194
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.212
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SimpleEdgeOptions.html: 19094
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.228
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SimpleEdgeResult.html: 12338
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.274
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SizeType.html: 18047
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.290
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SkeletonMethod.html: 18787
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.337
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Spoke2Result.html: 10749
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.337
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SpokeDirection.html: 18359
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.384
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SpokeOptions.html: 19032
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.399
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SpokeReport.html: 19967
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.446
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SpokeReport2.html: 18479
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.462
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.StraightEdge.html: 21730
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.493
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.StraightEdgeOptions.html: 22116
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.508
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.StraightEdgeReport2.html: 17956
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.555
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.StraightEdgeSearchMode.html: 20442
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.571
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.StructuringElement.html: 17281
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.618
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.SupervisedColorSegmentationReport.html: 17442
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.649
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TIFFCompressionType.html: 19446
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.664
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TIFFFileOptions.html: 18284
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.696
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TextAlignment.html: 18691
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.742
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ThresholdData.html: 17501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.758
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ThresholdMethod.html: 19901
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.789
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ThresholdMode.html: 19313
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.805
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.Tool.html: 23859
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.820
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.ToolWindowOptions.html: 23113
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.852
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TransformBehaviors.html: 19970
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.914
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TransformReport.html: 17137
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.930
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TruncateMode.html: 18248
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.961
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.TwoEdgePolarityType.html: 20032
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:36.992
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.UserPointSymbol.html: 16564
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.023
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.VerifyTextResult.html: 12142
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.054
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.VerticalTextAlignment.html: 19027
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.086
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.View3DOptions.html: 20269
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.101
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.VisionInfoType.html: 19371
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.132
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.VisionInfoType2.html: 22282
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.164
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WaveletBandsReport.html: 17182
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.195
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WaveletOptions.html: 17138
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.226
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WaveletTransformMode.html: 18726
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.257
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WaveletType.html: 35058
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.288
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WindowBackgroundFillStyle.html: 19384
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.304
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WindowBackgroundHatchStyle.html: 21272
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.351
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WindowEventType.html: 21794
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.366
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WindowOptions.html: 19262
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.413
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WindowSize.html: 16725
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.429
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WindowThreadPolicy.html: 18518
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.476
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.WriteClassifierFileMode.html: 18815
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.491
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.dxEnumerateVideoModesResult.html: 10804
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.522
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/NIVision.html: 715045
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.554
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/VisionException.html: 15321
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.585
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.AIMGrade.html: 12664
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.632
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.AIMGradeReport.html: 6692
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.663
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.AVIInfo.html: 4468
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.678
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Annulus.html: 8739
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.710
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ArcInfo.html: 9617
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.741
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ArcInfo2.html: 7461
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.772
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.AttenuateMode.html: 9101
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.803
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.AxisOrientation.html: 12599
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.834
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.AxisReport.html: 6867
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.866
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BCGOptions.html: 8396
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.881
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Barcode2DCellShape.html: 10595
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.912
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Barcode2DContrast.html: 10559
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.944
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Barcode2DInfo.html: 6476
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:37.959
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Barcode2DSearchMode.html: 12180
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.006
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Barcode2DShape.html: 10465
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.022
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Barcode2DType.html: 9983
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.068
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BarcodeInfo.html: 6938
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.084
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BarcodeType.html: 11317
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.146
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BestCircle.html: 4501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.162
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BestCircle2.html: 6782
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.193
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BestEllipse.html: 4512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.209
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BestEllipse2.html: 6806
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.256
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BestLine.html: 6713
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.271
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BorderMethod.html: 8891
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.302
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BrowserFrameStyle.html: 10265
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.334
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BrowserLocation.html: 7746
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.365
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.BrowserOptions.html: 4545
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.380
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ButtonLabel.html: 7634
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.427
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CIELabValue.html: 4512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.443
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CIEXYZValue.html: 7184
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.490
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationAxisInfo.html: 8669
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.505
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationInfo.html: 7281
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.552
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationLearnSetupInfo.html: 8801
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.552
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationMode.html: 10171
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.599
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationMode2.html: 10447
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.614
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationPoints.html: 7596
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.661
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationROI.html: 11675
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.677
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationReferencePoints.html: 4677
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.724
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationThumbnailType.html: 9541
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.739
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CalibrationUnit.html: 12817
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.786
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CaliperOptions.html: 7191
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.802
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CaliperReport.html: 6464
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.833
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CaliperToolResult.html: 7227
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.864
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CannyOptions.html: 6892
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.895
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharInfo.html: 4479
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.926
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharInfo2.html: 6574
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.958
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharReport.html: 7527
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:38.989
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharReport2.html: 7556
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.004
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharReport3.html: 7728
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.051
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharSet.html: 16023
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.067
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CharacterStatistics.html: 7905
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.129
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CircleDescriptor.html: 7464
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.129
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CircleFeature.html: 6452
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.176
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CircleFitOptions.html: 7750
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.192
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CircleMatch.html: 6432
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.207
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CircleReport.html: 6446
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.301
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClampMax2Report.html: 7832
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.363
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClampOverlaySettings.html: 7924
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.410
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClampPoints.html: 7584
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.488
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClampResults.html: 7606
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.582
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClampSettings.html: 7812
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.644
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassScore.html: 9007
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.691
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifiedCurve.html: 7471
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.706
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifiedDisparity.html: 7602
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.722
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierAccuracyReport.html: 6860
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.800
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierEngineType.html: 8906
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.847
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierReport.html: 7050
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.862
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierReportAdvanced.html: 7229
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.909
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierSampleInfo.html: 6608
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.925
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierSession.html: 26715
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:39.956
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifierType.html: 9886
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.003
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClassifyDistancesReport.html: 7492
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.018
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClosedContour.html: 6468
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.050
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ClosedCurveFeature.html: 6552
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.081
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorClassificationResolution.html: 10440
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.112
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorHistogramReport.html: 7316
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.143
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorIgnoreMode.html: 10381
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.174
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorInformation.html: 11234
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.206
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorMode.html: 15282
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.237
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorOptions.html: 7930
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.268
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorSegmenationOptions.html: 9035
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.284
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColorSensitivity.html: 12430
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.330
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ColumnProcessingMode.html: 10405
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.346
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ComparisonFunction.html: 9367
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.393
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Complex.html: 4468
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.393
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ComplexPlane.html: 10037
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.440
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CompressionType.html: 9261
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.455
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ComputeDistancesReport.html: 7266
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.502
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConcentricEdgeFitOptions.html: 7889
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.518
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConcentricRake2Result.html: 7364
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.564
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConcentricRakeDirection.html: 14495
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.580
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConcentricRakeReport.html: 7484
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.611
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConcentricRakeReport2.html: 6610
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.642
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConnectionConstraint.html: 7801
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.674
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConnectionConstraintType.html: 10222
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.689
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Connectivity.html: 9855
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.736
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConstCurveFeature.html: 6532
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.752
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConstructROIOptions.html: 4600
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.798
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ConstructROIOptions2.html: 4611
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.814
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourComputeCurvatureReport.html: 6971
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.861
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourFitLineReport.html: 6786
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.876
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourFitPolynomialReport.html: 6900
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.908
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourFitSplineReport.html: 6873
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.923
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourInfo.html: 4512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.970
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourInfo2.html: 6622
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:40.986
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourInfoReport.html: 6683
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.017
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourOverlaySettings.html: 7460
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.048
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourPoint.html: 7446
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.079
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourSetupMatchPatternResult.html: 7118
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.110
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContourType.html: 10749
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.142
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ContrastMode.html: 10933
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.188
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CooccurrenceOptions.html: 4600
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.204
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CoordinateSystem.html: 26605
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.235
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CoordinateTransform.html: 4600
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.251
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CoordinateTransform2.html: 7544
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.266
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CornerFeature.html: 6452
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.329
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CurvatureAnalysisReport.html: 7071
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.360
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Curve.html: 7738
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.391
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CurveOptions.html: 21719
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.422
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.CurveParameters.html: 6973
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.454
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixCellFillMode.html: 13532
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.485
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixCellFilterMode.html: 13678
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.532
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixCellSampleSize.html: 13678
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.547
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixDemodulationMode.html: 13758
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.594
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixDescriptionOptions.html: 7998
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.610
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixECC.html: 13188
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.656
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixGradingMode.html: 10203
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.672
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixMirrorMode.html: 10833
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.703
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixOptions.html: 4578
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.734
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixPolarity.html: 13388
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.734
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixReport.html: 7794
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.922
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixRotationMode.html: 10955
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:41.984
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixSearchOptions.html: 7918
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.000
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixSizeOptions.html: 7886
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.031
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DataMatrixSubtype.html: 10557
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.062
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectCirclesResult.html: 7500
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.093
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectEllipsesResult.html: 7528
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.124
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectExtremesOptions.html: 7050
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.171
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectExtremesResult.html: 7022
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.202
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectLinesResult.html: 7444
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.234
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectRectanglesResult.html: 7584
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.265
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DetectionMode.html: 9127
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.312
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Direction3D.html: 9898
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.327
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Disparity.html: 8557
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.374
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DisplacementVector.html: 7571
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.390
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DisplayMapping.html: 4545
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.436
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DistortionModel.html: 11654
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.452
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DistortionModelParams.html: 7965
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.499
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DivisionModel.html: 7821
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.499
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DrawMode.html: 14884
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.546
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.DrawTextOptions.html: 4556
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.561
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeFilterSize.html: 11289
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.624
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeInfo.html: 15740
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.624
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeLocationReport.html: 10933
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.670
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeOptions.html: 8513
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.686
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeOptions2.html: 24418
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.733
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgePolarity.html: 7408
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.748
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgePolaritySearchMode.html: 11895
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.780
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeProcess.html: 19500
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.811
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeReport.html: 4501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.842
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeReport2.html: 10522
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.873
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EdgeTool4Result.html: 7015
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.904
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EllipseDescriptor.html: 7492
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.920
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EllipseFeature.html: 6472
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.967
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EllipseMatch.html: 6452
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:42.982
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.EnumerateCustomKeysResult.html: 6836
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.014
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ErrorStatistics.html: 8603
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.045
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractContourDirection.html: 10194
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.076
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractContourReport.html: 6590
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.107
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractContourResult.html: 7789
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.138
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractContourSelection.html: 10194
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.154
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractCurvesResult.html: 7064
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.201
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractTextureFeaturesReport.html: 4699
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.232
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtractionMode.html: 11305
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.279
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ExtremeReport.html: 6470
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.294
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FeatureData.html: 9752
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.341
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FeatureType.html: 11091
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.357
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindCirclesResult.html: 6924
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.404
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindCircularEdgeOptions.html: 7862
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.419
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindCircularEdgeReport.html: 7834
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.466
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindConcentricEdgeOptions.html: 7905
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.482
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindConcentricEdgeReport.html: 7877
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.528
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindEdgeOptions2.html: 7628
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.544
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindEdgeReport.html: 7584
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.591
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindReferenceDirection.html: 13862
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.606
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindTransformMode.html: 11664
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.653
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindTransformRect2Result.html: 7649
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.669
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindTransformRectOptions2.html: 7677
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.700
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindTransformRects2Result.html: 8096
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.731
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FindTransformRectsOptions2.html: 8124
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.762
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FitCircleOptions.html: 6874
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.794
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FitEllipseOptions.html: 6898
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.825
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FitLineOptions.html: 6821
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.856
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FlattenType.html: 9141
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.872
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FlipAxis.html: 8857
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.918
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FocalLength.html: 7604
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.950
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.FontColor.html: 10009
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:43.981
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricAdvancedSetupDataOption.html: 7074
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.028
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricMatchingMode.html: 7914
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.059
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricMatchingSearchStrategy.html: 11561
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.090
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricPatternMatch.html: 4622
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.121
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricPatternMatch2.html: 7121
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.152
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricPatternMatch3.html: 6648
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.168
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GeometricSetupDataItem.html: 10051
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.215
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetBisectingLineResult.html: 7337
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.230
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetCalibrationInfoReport.html: 6899
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.277
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetCameraParametersReport.html: 6866
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.293
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetClassifierSampleInfoResult.html: 7001
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.340
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetFileInfoResult.html: 6702
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.355
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetGeometricFeaturesFromCurvesResult.html: 7270
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.402
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetGeometricTemplateFeatureInfoResult.html: 7078
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.418
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetImageSizeResult.html: 6696
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.464
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetMidLineResult.html: 7035
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.464
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetParticleClassifierOptions2Result.html: 7074
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.511
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetParticleClassifierOptionsResult.html: 7054
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.527
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetPerpendicularLineResult.html: 7255
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.542
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetPointsOnContourResult.html: 6816
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.558
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GetPointsOnLineResult.html: 6920
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.605
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GridDescriptor.html: 15660
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.667
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.GroupBehavior.html: 11513
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.683
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.HSIValue.html: 4479
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.730
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.HSLValue.html: 4479
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.745
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.HSVValue.html: 4479
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.776
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.HistogramReport.html: 10091
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.792
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxAttributeInformation.html: 4677
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.854
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxAttributeType.html: 10785
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.854
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxAttributeVisibility.html: 8696
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.901
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxBayerAlgorithm.html: 7886
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.932
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxBayerPattern.html: 7830
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.964
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxBufferNumberMode.html: 10036
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:44.995
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxBusType.html: 10862
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.026
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxCameraControlMode.html: 9242
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.042
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxCameraFile.html: 4567
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.088
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxCameraInformation.html: 4644
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.088
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxDestinationMode.html: 7914
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.135
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxEnumItem.html: 9007
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.151
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxIncompleteBufferMode.html: 8054
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.198
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxInterfaceFileFlags.html: 7998
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.213
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxLostPacketMode.html: 7886
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.276
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxOutputImageType.html: 7914
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.276
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxOverwriteMode.html: 7858
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.322
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxPixelSignedness.html: 7914
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.354
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxPnpEvent.html: 7718
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.385
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxStreamChannelMode.html: 7970
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.416
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxUSBConnectionSpeed.html: 7998
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.447
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.IMAQdxValueType.html: 7746
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.478
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Image.html: 226614
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.510
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ImageFeatureMode.html: 12387
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.541
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ImageInfo.html: 6534
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.572
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ImageSize.html: 7954
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.603
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ImageType.html: 13084
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.634
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.InspectionAlignment.html: 7623
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.666
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.InspectionOptions.html: 7591
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.697
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.InternalParameters.html: 7913
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.728
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.InterpolatePointsResult.html: 7223
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.759
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.InterpolationMethod.html: 17152
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.790
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.JPEG2000FileAdvancedOptions.html: 4688
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.822
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.KernelFamily.html: 7662
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.837
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LCDOptions.html: 7697
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.868
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LCDReport.html: 6849
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.900
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LCDSegments.html: 7502
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.946
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LabelToROIReport.html: 6783
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:45.962
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnCalibrationOptions.html: 12118
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.009
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnColorPatternOptions.html: 6914
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.024
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnGeometricPatternAdvancedOptions.html: 7732
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.056
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnGeometricPatternAdvancedOptions2.html: 7815
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.087
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnPatternAdvancedOptions.html: 7991
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.118
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnPatternAdvancedRotationOptions.html: 8234
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.149
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearnPatternAdvancedShiftOptions.html: 8168
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.180
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LearningMode.html: 12569
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.212
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LegFeature.html: 6392
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.258
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LevelType.html: 9743
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.274
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Line.html: 6288
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.305
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineDescriptor.html: 7408
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.321
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineEquation.html: 8783
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.368
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineFeature.html: 6412
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.399
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineFloat.html: 13172
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.430
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineGaugeMethod.html: 9697
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.461
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineMatch.html: 6392
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.508
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LineProfile.html: 8900
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.617
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LinearAverages.html: 6995
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.633
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LinearAveragesMode.html: 9346
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.680
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.LocalThresholdMethod.html: 12158
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.695
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MappingMethod.html: 9697
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.742
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MaskToROIResult.html: 6635
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.773
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchColorPatternOptions.html: 7391
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.820
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchColorPatternResult.html: 7363
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.836
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchColorResult.html: 7002
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.851
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchGeometricPattern2Result.html: 7970
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.914
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchGeometricPattern3Result.html: 7970
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.945
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchGeometricPatternAdvancedOptions.html: 4787
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.992
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchGeometricPatternAdvancedOptions2.html: 9660
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:46.992
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchGeometricPatternAdvancedOptions3.html: 8126
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.054
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchGeometricPatternOptions.html: 11196
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.054
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchMode.html: 6424
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.070
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchMultipleGeometricPatternsResult.html: 7477
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.132
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchPattern2Result.html: 7496
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.148
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchPattern3Result.html: 7486
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.194
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchPatternAdvancedOptions.html: 10034
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.210
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchPatternOptions.html: 9858
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.257
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchShapeResult.html: 7115
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.272
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MatchingMode.html: 11977
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.319
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MathTransformMethod.html: 9550
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.350
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MaxGridSize.html: 4512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.397
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MeasureParticlesCalibrationMode.html: 9850
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.397
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MeasureParticlesReport.html: 7237
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.460
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MeasurementType.html: 12259
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.475
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MeasurementValue.html: 10825
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.522
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MeterArc.html: 8585
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.538
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MeterArcMode.html: 9559
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.569
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MorphologyMethod.html: 10424
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.600
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MorphologyReconstructOperation.html: 12126
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.631
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MulticoreOperation.html: 8945
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.678
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.MultipleGeometricPattern.html: 11246
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.694
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.NearestNeighborClassResult.html: 7763
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.740
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.NearestNeighborMethod.html: 10167
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.756
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.NearestNeighborMetric.html: 10167
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.772
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.NearestNeighborOptions.html: 8324
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.834
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.NearestNeighborTrainingReport.html: 7202
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.865
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.NormalizationMethod.html: 10262
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.912
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.OCRProcessingOptions.html: 11545
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.928
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.OCRSpacingOptions.html: 11479
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.959
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ObjectType.html: 9365
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:47.990
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.OpenContour.html: 6428
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.006
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.OutlineMethod.html: 9208
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.052
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Overlay.html: 4468
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.068
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.OverlayTextOptions.html: 7485
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.084
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PairOfParallelLinePairsFeature.html: 6792
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.130
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PaletteType.html: 11217
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.177
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParallelLinePairFeature.html: 9035
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.208
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PartialCircle.html: 6715
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.240
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PartialEllipse.html: 6737
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.286
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierAutoThresholdOptions.html: 9038
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.286
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierLocalThresholdOptions.html: 9060
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.333
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierOptions.html: 9890
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.364
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierPreprocessingOptions.html: 8647
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.411
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierPreprocessingOptions2.html: 8676
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.442
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierThresholdType.html: 11339
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.474
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleClassifierType.html: 7942
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.505
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleFilterCriteria.html: 4633
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.536
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleFilterCriteria2.html: 8690
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.567
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleFilterOptions.html: 7444
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.583
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleFilterOptions2.html: 7420
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.630
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleInfoMode.html: 7774
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.661
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleReport.html: 4545
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.692
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ParticleType.html: 13220
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.723
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PatternMatch.html: 9223
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.739
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PhotometricMode.html: 9925
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.754
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Plane3D.html: 9754
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.817
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Point.html: 40811
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.848
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PointDouble.html: 22117
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.879
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PointDoublePair.html: 8009
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.910
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PointFloat.html: 122455
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.942
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PointSymbol.html: 10710
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:48.988
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PolarityType.html: 9819
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.020
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.PolyModel.html: 7733
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.051
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCellFilterMode.html: 13170
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.082
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCellSampleSize.html: 13170
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.113
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCodeDataToken.html: 9286
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.176
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCodeDescriptionOptions.html: 7773
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.238
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCodeReport.html: 7569
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.300
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCodeSearchOptions.html: 7693
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.394
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRCodeSizeOptions.html: 7661
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.410
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRDemodulationMode.html: 13250
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.441
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRDimensions.html: 10179
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.488
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRGradingMode.html: 9802
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.519
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRMirrorMode.html: 10171
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.550
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRModelType.html: 12791
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.581
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRPolarities.html: 12835
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.628
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRRotationMode.html: 10430
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.644
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QRStreamMode.html: 12268
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.690
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QuantifyData.html: 8517
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.706
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.QuantifyReport.html: 6774
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.753
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RGBU64Value.html: 4512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.768
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RGBValue.html: 58501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.815
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ROI.html: 93774
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.831
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ROILabel.html: 9743
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.862
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ROIProfile.html: 6701
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.893
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Rake2Result.html: 7094
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.940
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RakeDirection.html: 13750
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.956
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RakeOptions.html: 8564
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:49.987
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RakeProcessType.html: 10725
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.018
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RakeReport.html: 7214
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.049
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RakeReport2.html: 6410
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.080
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Range.html: 7275
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.112
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RangeDouble.html: 8375
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.127
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RangeFloat.html: 21512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.174
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RangeLabel.html: 8157
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.190
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RangeSettingDouble.html: 6938
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.205
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RawData.html: 11235
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.283
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadClassifierFileMode.html: 9776
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.314
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadClassifierFileResult.html: 7465
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.377
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadMeterResult.html: 6807
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.408
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadOCRFileResult.html: 7062
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.439
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadPDF417BarcodeResult.html: 7170
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.486
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadResolution.html: 10159
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.517
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadStrategy.html: 10087
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.548
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadTextOptions.html: 10034
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.611
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadTextReport.html: 4545
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.658
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadTextReport2.html: 4556
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.720
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadTextReport3.html: 7570
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.767
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReadVisionFileResult.html: 6927
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.798
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Rect.html: 25259
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.860
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RectOrientation.html: 9497
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.892
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RectangleDescriptor.html: 7548
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.923
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RectangleFeature.html: 6512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.970
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RectangleMatch.html: 6492
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:50.985
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ReferenceMode.html: 9297
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.016
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RefineMatchesResult.html: 7078
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.048
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RegistrationMethod.html: 10226
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.079
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RotatedRect.html: 8044
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.110
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RotationAngleRange.html: 9943
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.141
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.RoundingMode.html: 9170
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.172
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SampleScore.html: 7926
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.204
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ScalingMethod.html: 13327
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.235
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ScalingMode.html: 9177
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.266
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SearchArcInfo.html: 7798
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.297
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SearchDirection.html: 11046
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.328
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SearchLineInfo.html: 9955
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.360
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SearchStrategy.html: 13630
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.391
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SegmentInfo.html: 6442
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.422
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SegmentationDistanceLevel.html: 9631
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.453
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SelectParticleCriteria.html: 4633
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.484
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SettingType.html: 9621
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.516
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SetupMatchPatternData.html: 10866
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.547
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ShapeDetectionOptions.html: 11630
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.594
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ShapeMode.html: 9328
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.609
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ShapeReport.html: 6426
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.734
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SimpleEdgeOptions.html: 7049
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.796
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SimpleEdgeResult.html: 7021
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.812
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SizeType.html: 9177
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.859
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SkeletonMethod.html: 9073
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.874
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Spoke2Result.html: 7121
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.921
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SpokeDirection.html: 13919
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.952
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SpokeOptions.html: 7272
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:51.984
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SpokeReport.html: 7244
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.015
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SpokeReport2.html: 6430
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.062
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.StraightEdge.html: 8419
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.077
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.StraightEdgeOptions.html: 13672
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.124
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.StraightEdgeReport2.html: 8865
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.140
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.StraightEdgeSearchMode.html: 10442
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.171
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.StructuringElement.html: 12671
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.218
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.SupervisedColorSegmentationReport.html: 8179
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.233
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TIFFCompressionType.html: 10069
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.264
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TIFFFileOptions.html: 7099
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.311
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TextAlignment.html: 11861
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.327
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ThresholdData.html: 8597
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.374
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ThresholdMethod.html: 13714
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.389
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ThresholdMode.html: 9998
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.436
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.Tool.html: 7438
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.452
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.ToolWindowOptions.html: 4578
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.498
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TransformBehaviors.html: 7682
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.514
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TransformReport.html: 7670
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.561
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TruncateMode.html: 9050
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.576
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.TwoEdgePolarityType.html: 9903
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.608
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.UserPointSymbol.html: 8597
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.639
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.VerifyTextResult.html: 7167
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.670
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.VerticalTextAlignment.html: 10763
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.701
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.View3DOptions.html: 6829
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.732
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.VisionInfoType.html: 7718
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.764
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.VisionInfoType2.html: 7746
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.779
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WaveletBandsReport.html: 4589
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.795
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WaveletOptions.html: 4545
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.857
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WaveletTransformMode.html: 10117
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.888
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WaveletType.html: 9567
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.920
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WindowBackgroundFillStyle.html: 8026
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.951
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WindowBackgroundHatchStyle.html: 8054
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:52.982
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WindowEventType.html: 7746
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.013
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WindowOptions.html: 7690
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.044
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WindowSize.html: 4501
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.091
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WindowThreadPolicy.html: 7830
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.122
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.WriteClassifierFileMode.html: 9675
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.154
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.dxEnumerateVideoModesResult.html: 6746
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.185
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/NIVision.html: 4380
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.216
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/class-use/VisionException.html: 4457
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.232
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/package-frame.html: 63902
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.278
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/package-summary.html: 108003
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.294
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/package-tree.html: 100131
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.325
+!MESSAGE 	ZipEntry javadoc/com/ni/vision/package-use.html: 85974
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.356
+!MESSAGE 	ZipEntry javadoc/constant-values.html: 180660
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.388
+!MESSAGE 	ZipEntry javadoc/deprecated-list.html: 11307
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.434
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ADXL345_I2C.AllAxes.html: 11964
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.466
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ADXL345_I2C.Axes.html: 12016
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.481
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ADXL345_I2C.html: 31686
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.512
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ADXL345_SPI.AllAxes.html: 11964
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.559
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ADXL345_SPI.Axes.html: 12032
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.590
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ADXL345_SPI.html: 32650
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.606
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AccumulatorResult.html: 11543
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.653
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogAccelerometer.html: 28701
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.668
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogInput.html: 44207
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.715
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogOutput.html: 23374
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.809
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogPotentiometer.html: 30007
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.887
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogTrigger.AnalogTriggerException.html: 14560
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.902
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogTrigger.html: 24664
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.934
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogTriggerOutput.AnalogTriggerOutputException.html: 14823
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:53.980
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogTriggerOutput.AnalogTriggerType.html: 19254
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.012
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/AnalogTriggerOutput.html: 28446
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.058
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/BuiltInAccelerometer.html: 26374
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.074
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANJaguar.ControlMode.html: 18840
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.121
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANJaguar.LimitMode.html: 20425
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.136
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANJaguar.NeutralMode.html: 20230
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.168
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANJaguar.html: 118410
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.199
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANTalon.ControlMode.html: 21584
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.230
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANTalon.FeedbackDevice.html: 20853
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.246
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANTalon.StatusFrameRate.html: 20423
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.261
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CANTalon.html: 76000
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.308
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CameraServer.html: 20066
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.355
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/Compressor.html: 34958
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.386
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/ControllerPower.html: 21233
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.417
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/Counter.Mode.html: 19691
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.448
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/Counter.html: 61563
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.480
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CounterBase.EncodingType.html: 12700
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.511
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/CounterBase.html: 12788
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.542
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DigitalInput.html: 28943
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.558
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DigitalOutput.html: 35066
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.605
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DigitalSource.html: 23536
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.620
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DoubleSolenoid.Value.html: 13968
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.667
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DoubleSolenoid.html: 30521
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.683
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DriverStation.Alliance.html: 17833
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.729
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/DriverStation.html: 39720
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.745
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/Encoder.IndexingType.html: 18372
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.792
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/Encoder.html: 67841
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.823
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/GearTooth.html: 27240
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.854
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/GenericHID.Hand.html: 11590
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.885
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/GenericHID.html: 25853
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.917
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/Gyro.html: 32629
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.948
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/HLUsageReporting.Interface.html: 9371
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:54.963
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/HLUsageReporting.Null.html: 14158
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:55.010
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/HLUsageReporting.html: 14687
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:55.026
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/I2C.Port.html: 17355
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:55.057
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/I2C.html: 25512
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:55.088
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/InterruptHandlerFunction.html: 13517
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2015-02-17 10:16:55.119
+!MESSAGE 	ZipEntry javadoc/edu/wpi/first/wpilibj/InterruptableSensorBase.html: 28491
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 4 0 2015-02-17 10:16:55.151
+!MESSAGE Error installing java
+!STACK 0
+edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller$InstallException: Install encountered a problem
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller.install(AbstractInstaller.java:175)
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller$1.run(AbstractInstaller.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.io.IOException: There is not enough space on the disk
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller.copyStreams(AbstractInstaller.java:184)
+	at edu.wpi.first.wpilib.plugins.core.installer.AbstractInstaller.install(AbstractInstaller.java:165)
+	... 2 more
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 4 0 2015-02-17 10:16:55.151
+!MESSAGE Unable to install java: There is not enough space on the disk. See console for details.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-02-17 10:16:57.179
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-02-17 10:16:57.179
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Tommy'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
