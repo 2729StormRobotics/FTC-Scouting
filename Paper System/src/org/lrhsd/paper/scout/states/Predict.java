@@ -103,7 +103,7 @@ public class Predict {
 		}
 		else if((ERrollinggoalscore > LIKELY && ERrollinggoalscore < DEFINITE)
 				|| (ERrollinggoalscore == DEFINITE) || (ERrollinggoalscore > DEFINITE)){
-			return 30 * (ERrollinggoalscore * 10.0);
+			return 30;
 			
 		}
 		else{
@@ -301,7 +301,7 @@ public class Predict {
 		}
 		else if((EBrollinggoalscore > LIKELY && EBrollinggoalscore < DEFINITE)
 				|| (EBrollinggoalscore == DEFINITE) || (EBrollinggoalscore > DEFINITE)){
-			return 30 * (ERrollinggoalscore * 10.0);
+			return 30;
 			
 		}
 		else{
@@ -499,7 +499,7 @@ public class Predict {
 		}
 		else if((Erollinggoalscore > LIKELY && Erollinggoalscore < DEFINITE)
 				|| (Erollinggoalscore == DEFINITE) || (Erollinggoalscore > DEFINITE)){
-			return 30 * (Erollinggoalscore * 10.0);
+			return 30;
 			
 		}
 		else{
