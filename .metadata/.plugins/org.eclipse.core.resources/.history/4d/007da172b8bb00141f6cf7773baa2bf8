@@ -111,7 +111,12 @@ public class Predict {
 		}
 	}
 	public double predict_red_rolling_pz_auto(){
-		
+		if(ERrollinggoaltopz < NO || (ERrollinggoaltopz > NO && ERrollinggoaltopz < MAYBE)){
+			return 0;
+			
+		}
+		else if((ERrollinggoaltopz > LIKELY && ERrollinggoaltopz < DEFINITE)
+				|| (ERrollinggoaltopz == DEFINITE) || (ERrollinggoaltopz > DEFINITE)){
 			if(ERrollinggoaltopz == .33 || (ERrollinggoaltopz > .33 && ERrollinggoaltopz < .66)){
 				return 30;
 			}
@@ -124,6 +129,11 @@ public class Predict {
 			else{
 				return 0;
 			}
+			
+		}
+		else{
+			return 0;
+		}
 	}
 	public double predict_red_center_auto(){
 		if(ERcenterscoredauto < NO || (ERcenterscoredauto > NO && ERcenterscoredauto < MAYBE)){
@@ -189,38 +199,54 @@ public class Predict {
 		}
 	}
 	public double predict_red_bot_pz(){
-		
+		if(ERbotrolltopz < NO || (ERbotrolltopz > NO && ERbotrolltopz < MAYBE)){
+			return 0;
+			
+		}
+		else if((ERbotrolltopz > LIKELY && ERbotrolltopz < DEFINITE)
+				|| (ERbotrolltopz == DEFINITE) || (ERbotrolltopz > DEFINITE)){
 			if(ERbotrolltopz == .25 || (ERbotrolltopz > .25 && ERbotrolltopz < .5)){
-				return 1*10;
+				return 1;
 			}
 			else if(ERbotrolltopz == .5 || (ERbotrolltopz > .5 && ERbotrolltopz < .75)){
-				return 2*10;
+				return 2;
 			}
 			else if(ERbotrolltopz == .75 || (ERbotrolltopz > .75 && ERbotrolltopz < 1)){
-				return 3*10;
+				return 3;
 			}
-			else if(ERbotrolltopz == 1 || ERbotrolltopz > 1){
-				return 4*10;
+			else if(ERbotrolltopz == 1){
+				return 4;
 			}
-		return 0;
-	}
-	public double predict_red_bot_floor(){
-		
-			if(ERbotrollofffloor == .25 || (ERbotrollofffloor > .25 && ERbotrollofffloor < .5)){
-				return 1*30;
-			}
-			else if(ERbotrollofffloor == .5 || (ERbotrollofffloor > .5 && ERbotrolltopz < .75)){
-				return 2*30;
-			}
-			else if(ERbotrollofffloor == .75 || (ERbotrollofffloor > .75 && ERbotrolltopz < 1)){
-				return 3*30;
-			}
-			else if(ERbotrolltopz == 1 || ERbotrolltopz >1){
-				return 4*30;
-			}
+		}
 		else{
 			return 0;
 		}
+		return 0;
+	}
+	public double predict_red_bot_floor(){
+		if(ERbotrolltopz < NO || (ERbotrollofffloor > NO && ERbotrollofffloor < MAYBE)){
+			return 0;
+			
+		}
+		else if((ERbotrollofffloor > LIKELY && ERbotrollofffloor < DEFINITE)
+				|| (ERbotrollofffloor == DEFINITE) || (ERbotrollofffloor > DEFINITE)){
+			if(ERbotrollofffloor == .25 || (ERbotrollofffloor > .25 && ERbotrollofffloor < .5)){
+				return 1;
+			}
+			else if(ERbotrollofffloor == .5 || (ERbotrollofffloor > .5 && ERbotrolltopz < .75)){
+				return 2;
+			}
+			else if(ERbotrollofffloor == .75 || (ERbotrollofffloor > .75 && ERbotrolltopz < 1)){
+				return 3;
+			}
+			else if(ERbotrolltopz == 1){
+				return 4;
+			}
+		}
+		else{
+			return ERbotrolltopz*4;
+		}
+			return 0;
 		}
 	public double predict_red_center_goal_end(){
 		if(ERcenterscoredend < NO || (ERcenterscoredend > NO && ERcenterscoredend < MAYBE)){
@@ -283,7 +309,12 @@ public class Predict {
 		}
 	}
 	public double predict_blue_rolling_pz_auto(){
-		
+		if(EBrollinggoaltopz < NO || (EBrollinggoaltopz > NO && EBrollinggoaltopz < MAYBE)){
+			return 0;
+			
+		}
+		else if((EBrollinggoaltopz > LIKELY && EBrollinggoaltopz < DEFINITE)
+				|| (EBrollinggoaltopz == DEFINITE) || (EBrollinggoaltopz > DEFINITE)){
 			if(EBrollinggoaltopz == .33 || (EBrollinggoaltopz > .33 && EBrollinggoaltopz < .66)){
 				return 30;
 			}
@@ -293,6 +324,11 @@ public class Predict {
 			else if(EBrollinggoaltopz == 1 || EBrollinggoaltopz > 1){
 			  return 30*3;	
 			}
+			else{
+				return 0;
+			}
+			
+		}
 		else{
 			return 0;
 		}
@@ -361,41 +397,55 @@ public class Predict {
 		}
 	}
 	public double predict_blue_bot_pz(){
-		
+		if(EBbotrolltopz < NO || (EBbotrolltopz > NO && EBbotrolltopz < MAYBE)){
+			return 0;
+			
+		}
+		else if((EBbotrolltopz > LIKELY && EBbotrolltopz < DEFINITE)
+				|| (EBbotrolltopz == DEFINITE) || (EBbotrolltopz > DEFINITE)){
 			if(EBbotrolltopz == .25 || (EBbotrolltopz > .25 && EBbotrolltopz < .5)){
-				return 1*10;
+				return 1;
 			}
 			else if(EBbotrolltopz == .5 || (EBbotrolltopz > .5 && EBbotrolltopz < .75)){
-				return 2*10;
+				return 2;
 			}
 			else if(EBbotrolltopz == .75 || (EBbotrolltopz > .75 && EBbotrolltopz < 1)){
-				return 3*10;
+				return 3;
 			}
-			else if(EBbotrolltopz == 1 || EBbotrolltopz > 1){
-				return 4*10;
+			else if(EBbotrolltopz == 1){
+				return 4;
 			}
-		else{
-		return 0;
 		}
+		else{
+			return Math.round(EBbotrolltopz);
+		}
+		return 0;
 	}
 	public double predict_blue_bot_floor(){
-		
+		if(EBbotrolltopz < NO || (EBbotrollofffloor > NO && EBbotrollofffloor < MAYBE)){
+			return 0;
+			
+		}
+		else if((EBbotrollofffloor > LIKELY && EBbotrollofffloor < DEFINITE)
+				|| (EBbotrollofffloor == DEFINITE) || (EBbotrollofffloor > DEFINITE)){
 			if(EBbotrollofffloor == .25 || (EBbotrollofffloor > .25 && EBbotrollofffloor < .5)){
-				return 1*30;
+				return 1;
 			}
 			else if(EBbotrollofffloor == .5 || (EBbotrollofffloor > .5 && EBbotrolltopz < .75)){
-				return 2*30;
+				return 2;
 			}
 			else if(EBbotrollofffloor == .75 || (EBbotrollofffloor > .75 && EBbotrolltopz < 1)){
-				return 3*30;
+				return 3;
 			}
-			else if(EBbotrolltopz == 1 || EBbotrolltopz > 1){
-				return 4*30;
+			else if(EBbotrolltopz == 1){
+				return 4;
 			}
+		}
 		else{
+			return EBbotrolltopz*4;
+		}
 			return 0;
 		}
-	}
 	public double predict_blue_center_goal_end(){
 		if(EBcenterscoredend < NO || (EBcenterscoredend > NO && EBcenterscoredend < MAYBE)){
 			return 0;
@@ -457,7 +507,12 @@ public class Predict {
 		}
 	}
 	public double predict_team_rolling_pz_auto(){
-		
+		if(Erollinggoaltopz < NO || (Erollinggoaltopz > NO && Erollinggoaltopz < MAYBE)){
+			return 0;
+			
+		}
+		else if((Erollinggoaltopz > LIKELY && Erollinggoaltopz < DEFINITE)
+				|| (Erollinggoaltopz == DEFINITE) || (Erollinggoaltopz > DEFINITE)){
 			if(Erollinggoaltopz == .33 || (Erollinggoaltopz > .33 && Erollinggoaltopz < .66)){
 				return 30;
 			}
@@ -472,8 +527,10 @@ public class Predict {
 			}
 			
 		}
-		
-	
+		else{
+			return 0;
+		}
+	}
 	public double predict_team_center_auto(){
 		if(Ecenterscoredauto < NO || (Ecenterscoredauto > NO && Ecenterscoredauto < MAYBE)){
 			return 0;
@@ -538,44 +595,56 @@ public class Predict {
 		}
 	}
 	public double predict_team_bot_pz(){
-		
+		if(Ebotrolltopz < NO || (Ebotrolltopz > NO && Ebotrolltopz < MAYBE)){
+			return 0;
+			
+		}
+		else if((Ebotrolltopz > LIKELY && Ebotrolltopz < DEFINITE)
+				|| (Ebotrolltopz == DEFINITE) || (Ebotrolltopz > DEFINITE)){
 			if(Ebotrolltopz == .25 || (Ebotrolltopz > .25 && Ebotrolltopz < .5)){
-				return 1*10;
+				return 1;
 			}
 			else if(Ebotrolltopz == .5 || (Ebotrolltopz > .5 && Ebotrolltopz < .75)){
-				return 2*10;
+				return 2;
 			}
 			else if(Ebotrolltopz == .75 || (Ebotrolltopz > .75 && Ebotrolltopz < 1)){
-				return 3*10;
+				return 3;
 			}
-			else if(Ebotrolltopz == 1 || Ebotrolltopz > 1){
-				return 4*10;
-			}
-			else{
-				return 0;
+			else if(Ebotrolltopz == 1){
+				return 4;
 			}
 		}
-			
+		else{
+			return Math.round(Ebotrolltopz);
+		}
+		return 0;
+	}
 	public double predict_team_bot_floor(){
-		
+		if(Ebotrolltopz < NO || (Ebotrollofffloor > NO && Ebotrollofffloor < MAYBE)){
+			return 0;
+			
+		}
+		else if((Ebotrollofffloor > LIKELY && Ebotrollofffloor < DEFINITE)
+				|| (Ebotrollofffloor == DEFINITE) || (Ebotrollofffloor > DEFINITE)){
 			if(Ebotrollofffloor == .25 || (Ebotrollofffloor > .25 && Ebotrollofffloor < .5)){
-				return 1*30;
+				return 1;
 			}
 			else if(Ebotrollofffloor == .5 || (Ebotrollofffloor > .5 && Ebotrolltopz < .75)){
-				return 2*30;
+				return 2;
 			}
 			else if(Ebotrollofffloor == .75 || (Ebotrollofffloor > .75 && Ebotrolltopz < 1)){
-				return 3*30;
+				return 3;
 			}
-			else if(Ebotrolltopz == 1 || Ebotrolltopz > 1){
-				return 4*30;
+			else if(Ebotrolltopz == 1){
+				return 4;
 			}
-			else{
-				return 0;
-			}
-			
-	  }	
-	 public double predict_team_center_goal_end(){
+		}
+		else{
+			return Ebotrolltopz*4;
+		}
+			return 0;
+		}
+	public double predict_team_center_goal_end(){
 		if(Ecenterscoredend < NO || (Ecenterscoredend > NO && Ecenterscoredend < MAYBE)){
 			return 0;
 			
