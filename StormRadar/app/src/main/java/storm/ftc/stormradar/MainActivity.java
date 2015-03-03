@@ -1,8 +1,10 @@
 package storm.ftc.stormradar;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +16,7 @@ import android.widget.Toast;
 import storm.ftc.stormradar.DataHandler.Datahandler;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,14 +61,16 @@ public class MainActivity extends ActionBarActivity {
 
         RadioButton red2 = (RadioButton) this.findViewById(R.id.btn_red2),
                 blue2 = (RadioButton) this.findViewById(R.id.btn_blue2);
-        if (!team.getText().toString().matches("") && !team2.getText().toString().matches("") && match.getText().toString().matches("")
-                && match2.getText().toString().matches("") && ((red2.isChecked() || blue2.isChecked()))) {
+        if (!team.getText().toString().equals("") && !team2.getText().toString().equals("") && !match.getText().toString().equals("")
+                && !match2.getText().toString().equals("") && ((red2.isChecked() || blue2.isChecked()))) {
             return true;
         }
         return false;
     }
-    public void begin(View view){
-      if(this.DataEntered()){
+    public void _begin(View view){
+        Log.d("dfjk;dasjlkfajklds", "fdafadfad");
+      if(DataEntered()){
+          Log.d("dfjk;dasjlkfajklds", "shitters have been entered");
           EditText team = (EditText) this.findViewById(R.id.team),
                   team2 = (EditText) this.findViewById(R.id.team2),
                   match = (EditText) this.findViewById(R.id.match),
@@ -93,6 +97,7 @@ public class MainActivity extends ActionBarActivity {
           startActivity(intent);
       }
         else{
+          Log.d("dfjk;dasjlkfajklds", "they didnt enter all the bitches");
           Toast.makeText(this, "Please input all data", Toast.LENGTH_SHORT);
       }
 

@@ -26,7 +26,6 @@
         android:id="@+id/match"
         android:layout_width="match_parent"
         android:layout_height="50sp"
-        android:layout_gravity="center_horizontal"
         android:background="#ffffff"
         android:ems="10"
         android:inputType="number"
@@ -106,7 +105,7 @@
         android:layout_gravity="center_horizontal"
         android:textColor="@android:color/black"
         android:background="@android:color/background_light"
-        android:onClick="begin"
+        android:onClick="_begin"
         android:stateListAnimator="@null"
         android:layout_marginBottom="30dp"
         android:textStyle="bold" />
